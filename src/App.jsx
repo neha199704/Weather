@@ -52,7 +52,7 @@ function App() {
 
   const apiCall = (lat, lon) => {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?APPID=29f0863b63441f9e01868300571025a3&lat=${lat}&lon=${lon}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?APPID=29f0863b63441f9e01868300571025a3&lat=${lat}&lon=${lon}&units=metric`
     )
       .then((response) => response.json())
       .then((result) => {
